@@ -14,6 +14,17 @@
 
 @implementation ViewController
 
+- (IBAction)logar:(id)sender{
+    if ([usuario.text isEqualToString:@"usuario"] && [senha.text isEqualToString:@"senha"]) {
+        
+        [self performSegueWithIdentifier: @"listar" sender: self];
+        
+    } else {
+        UIAlertView *alerta = [[UIAlertView alloc] initWithTitle:@"ERRO" message:@"usuário ou senha incorretos" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alerta show];
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.

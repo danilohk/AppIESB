@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController{
+    IBOutlet UITextField *usuario;
+    IBOutlet UITextField *senha;
+}
+- (IBAction)logar:(id)sender;
 
 @end
 
