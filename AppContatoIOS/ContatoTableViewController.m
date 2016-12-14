@@ -30,19 +30,20 @@
 }
 
 -(IBAction)novoContato:(UIButton *)sender {
-    [self performSegueWithIdentifier: @"novo" sender: self];
+    //[self performSegueWithIdentifier: @"novo" sender: self];
+    [self performSegueWithIdentifier: @"nova" sender: self];
 }
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier: @"edita" sender: self];
+    [self performSegueWithIdentifier: @"edit" sender: self];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue
                  sender:(id)sender {
     
-    if ([[segue identifier] isEqualToString:@"edita"]) {
+    if ([[segue identifier] isEqualToString:@"edit"]) {
         Contato *contato = [self.fetchedResultsController objectAtIndexPath:[self.tableView indexPathForSelectedRow]];
         
         formularioViewController *destino = segue.destinationViewController;

@@ -2,7 +2,7 @@
 //  Contato+CoreDataProperties.h
 //  AppContatoIOS
 //
-//  Created by macbook on 16/11/16.
+//  Created by macbook on 14/12/16.
 //  Copyright © 2016 ALUNO. All rights reserved.
 //
 
@@ -16,9 +16,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSFetchRequest<Contato *> *)fetchRequest;
 
 @property (nullable, nonatomic, copy) NSString *email;
+@property (nullable, nonatomic, retain) NSData *foto;
 @property (nullable, nonatomic, copy) NSString *nome;
 @property (nullable, nonatomic, copy) NSString *telefone;
-@property (nullable, nonatomic, retain) NSData *foto;
+@property (nullable, nonatomic, copy) NSString *endereco;
+@property (nullable, nonatomic, copy) NSString *latitude;
+@property (nullable, nonatomic, copy) NSString *longitude;
 
 @end
 

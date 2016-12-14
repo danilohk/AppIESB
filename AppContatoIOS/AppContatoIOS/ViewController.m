@@ -210,6 +210,9 @@ didCompleteWithError:(nullable NSError *)error{
                     [contato setNome: [user objectForKey:@"nome"]];
                     [contato setEmail: [user objectForKey:@"email"]];
                     [contato setTelefone: [user objectForKey:@"telefone"]];
+                    [contato setEndereco: [user objectForKey:@"endereco"]];
+                    [contato setLatitude: [user objectForKey:@"latitude"]];
+                    [contato setLongitude: [user objectForKey:@"longitude"]];
                     
                     NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:[user objectForKey:@"avatar"]]];
                     [contato setFoto: data];

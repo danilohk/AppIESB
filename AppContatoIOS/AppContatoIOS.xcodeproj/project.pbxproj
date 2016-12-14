@@ -21,6 +21,7 @@
 		FAB850BB1DC0C800001E2EF5 /* ContatoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB850BA1DC0C800001E2EF5 /* ContatoTableViewController.m */; };
 		FAB850BD1DC0CFF1001E2EF5 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = FAB850BC1DC0CFF1001E2EF5 /* users.json */; };
 		FACD2B791DC1137700A82784 /* formularioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FACD2B781DC1137700A82784 /* formularioViewController.m */; };
+		FAECABA11E01869C009A6E66 /* FormularioTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAECABA01E01869C009A6E66 /* FormularioTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		FAB850BC1DC0CFF1001E2EF5 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		FACD2B771DC1137700A82784 /* formularioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = formularioViewController.h; sourceTree = "<group>"; };
 		FACD2B781DC1137700A82784 /* formularioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = formularioViewController.m; sourceTree = "<group>"; };
+		FAECAB9F1E01869C009A6E66 /* FormularioTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormularioTableViewController.h; sourceTree = "<group>"; };
+		FAECABA01E01869C009A6E66 /* FormularioTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormularioTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				57AB36731D5BED5E00217529 /* ViewController.h */,
 				57AB36741D5BED5E00217529 /* ViewController.m */,
 				57AB36761D5BED5E00217529 /* Main.storyboard */,
+				FAECAB9F1E01869C009A6E66 /* FormularioTableViewController.h */,
+				FAECABA01E01869C009A6E66 /* FormularioTableViewController.m */,
 				FA4F7B4C1DDB6E6C006757EC /* ContatoTableViewCell.h */,
 				FA4F7B4D1DDB6E6D006757EC /* ContatoTableViewCell.m */,
 				FA4F7B4E1DDB6E6D006757EC /* ContatoTableViewCell.xib */,
@@ -193,6 +198,7 @@
 				FACD2B791DC1137700A82784 /* formularioViewController.m in Sources */,
 				FA4F7B4F1DDB6E6D006757EC /* ContatoTableViewCell.m in Sources */,
 				FAB850B71DC0C3B7001E2EF5 /* Contato+CoreDataClass.m in Sources */,
+				FAECABA11E01869C009A6E66 /* FormularioTableViewController.m in Sources */,
 				57AB367B1D5BED5E00217529 /* AppContatoIOS.xcdatamodeld in Sources */,
 				57AB366F1D5BED5E00217529 /* main.m in Sources */,
 			);
