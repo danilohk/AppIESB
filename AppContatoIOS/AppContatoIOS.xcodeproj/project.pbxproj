@@ -14,7 +14,13 @@
 		57AB367B1D5BED5E00217529 /* AppContatoIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57AB36791D5BED5E00217529 /* AppContatoIOS.xcdatamodeld */; };
 		57AB367D1D5BED5E00217529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57AB367C1D5BED5E00217529 /* Assets.xcassets */; };
 		57AB36801D5BED5E00217529 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AB367E1D5BED5E00217529 /* LaunchScreen.storyboard */; };
-		FA186EAE1D81921A00B52A02 /* ListaDeContatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA186EAD1D81921A00B52A02 /* ListaDeContatosViewController.m */; };
+		FA4F7B4F1DDB6E6D006757EC /* ContatoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4F7B4D1DDB6E6D006757EC /* ContatoTableViewCell.m */; };
+		FA4F7B501DDB6E6D006757EC /* ContatoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4F7B4E1DDB6E6D006757EC /* ContatoTableViewCell.xib */; };
+		FAB850B71DC0C3B7001E2EF5 /* Contato+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB850B41DC0C3B7001E2EF5 /* Contato+CoreDataClass.m */; };
+		FAB850B81DC0C3B7001E2EF5 /* Contato+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB850B61DC0C3B7001E2EF5 /* Contato+CoreDataProperties.m */; };
+		FAB850BB1DC0C800001E2EF5 /* ContatoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB850BA1DC0C800001E2EF5 /* ContatoTableViewController.m */; };
+		FAB850BD1DC0CFF1001E2EF5 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = FAB850BC1DC0CFF1001E2EF5 /* users.json */; };
+		FACD2B791DC1137700A82784 /* formularioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FACD2B781DC1137700A82784 /* formularioViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +35,18 @@
 		57AB367C1D5BED5E00217529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57AB367F1D5BED5E00217529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57AB36811D5BED5E00217529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA186EAC1D81921A00B52A02 /* ListaDeContatosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaDeContatosViewController.h; sourceTree = "<group>"; };
-		FA186EAD1D81921A00B52A02 /* ListaDeContatosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaDeContatosViewController.m; sourceTree = "<group>"; };
+		FA4F7B4C1DDB6E6C006757EC /* ContatoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatoTableViewCell.h; sourceTree = "<group>"; };
+		FA4F7B4D1DDB6E6D006757EC /* ContatoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatoTableViewCell.m; sourceTree = "<group>"; };
+		FA4F7B4E1DDB6E6D006757EC /* ContatoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContatoTableViewCell.xib; sourceTree = "<group>"; };
+		FAB850B31DC0C3B7001E2EF5 /* Contato+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Contato+CoreDataClass.h"; sourceTree = "<group>"; };
+		FAB850B41DC0C3B7001E2EF5 /* Contato+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Contato+CoreDataClass.m"; sourceTree = "<group>"; };
+		FAB850B51DC0C3B7001E2EF5 /* Contato+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Contato+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FAB850B61DC0C3B7001E2EF5 /* Contato+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Contato+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FAB850B91DC0C800001E2EF5 /* ContatoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatoTableViewController.h; sourceTree = "<group>"; };
+		FAB850BA1DC0C800001E2EF5 /* ContatoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatoTableViewController.m; sourceTree = "<group>"; };
+		FAB850BC1DC0CFF1001E2EF5 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		FACD2B771DC1137700A82784 /* formularioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = formularioViewController.h; sourceTree = "<group>"; };
+		FACD2B781DC1137700A82784 /* formularioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = formularioViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,12 @@
 		57AB36611D5BED5E00217529 = {
 			isa = PBXGroup;
 			children = (
+				FAB850B91DC0C800001E2EF5 /* ContatoTableViewController.h */,
+				FAB850BA1DC0C800001E2EF5 /* ContatoTableViewController.m */,
+				FAB850B31DC0C3B7001E2EF5 /* Contato+CoreDataClass.h */,
+				FAB850B41DC0C3B7001E2EF5 /* Contato+CoreDataClass.m */,
+				FAB850B51DC0C3B7001E2EF5 /* Contato+CoreDataProperties.h */,
+				FAB850B61DC0C3B7001E2EF5 /* Contato+CoreDataProperties.m */,
 				57AB366C1D5BED5E00217529 /* AppContatoIOS */,
 				57AB366B1D5BED5E00217529 /* Products */,
 			);
@@ -68,8 +90,11 @@
 				57AB36731D5BED5E00217529 /* ViewController.h */,
 				57AB36741D5BED5E00217529 /* ViewController.m */,
 				57AB36761D5BED5E00217529 /* Main.storyboard */,
-				FA186EAC1D81921A00B52A02 /* ListaDeContatosViewController.h */,
-				FA186EAD1D81921A00B52A02 /* ListaDeContatosViewController.m */,
+				FA4F7B4C1DDB6E6C006757EC /* ContatoTableViewCell.h */,
+				FA4F7B4D1DDB6E6D006757EC /* ContatoTableViewCell.m */,
+				FA4F7B4E1DDB6E6D006757EC /* ContatoTableViewCell.xib */,
+				FACD2B771DC1137700A82784 /* formularioViewController.h */,
+				FACD2B781DC1137700A82784 /* formularioViewController.m */,
 				57AB367C1D5BED5E00217529 /* Assets.xcassets */,
 				57AB367E1D5BED5E00217529 /* LaunchScreen.storyboard */,
 				57AB36811D5BED5E00217529 /* Info.plist */,
@@ -82,6 +107,7 @@
 		57AB366D1D5BED5E00217529 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FAB850BC1DC0CFF1001E2EF5 /* users.json */,
 				57AB366E1D5BED5E00217529 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -113,11 +139,12 @@
 		57AB36621D5BED5E00217529 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = ALUNO;
 				TargetAttributes = {
 					57AB36691D5BED5E00217529 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Y555J8GXQU;
 					};
 				};
 			};
@@ -144,9 +171,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB850BD1DC0CFF1001E2EF5 /* users.json in Resources */,
 				57AB36801D5BED5E00217529 /* LaunchScreen.storyboard in Resources */,
 				57AB367D1D5BED5E00217529 /* Assets.xcassets in Resources */,
 				57AB36781D5BED5E00217529 /* Main.storyboard in Resources */,
+				FA4F7B501DDB6E6D006757EC /* ContatoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,9 +187,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				57AB36751D5BED5E00217529 /* ViewController.m in Sources */,
+				FAB850BB1DC0C800001E2EF5 /* ContatoTableViewController.m in Sources */,
+				FAB850B81DC0C3B7001E2EF5 /* Contato+CoreDataProperties.m in Sources */,
 				57AB36721D5BED5E00217529 /* AppDelegate.m in Sources */,
+				FACD2B791DC1137700A82784 /* formularioViewController.m in Sources */,
+				FA4F7B4F1DDB6E6D006757EC /* ContatoTableViewCell.m in Sources */,
+				FAB850B71DC0C3B7001E2EF5 /* Contato+CoreDataClass.m in Sources */,
 				57AB367B1D5BED5E00217529 /* AppContatoIOS.xcdatamodeld in Sources */,
-				FA186EAE1D81921A00B52A02 /* ListaDeContatosViewController.m in Sources */,
 				57AB366F1D5BED5E00217529 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,8 +234,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -246,8 +281,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -275,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y555J8GXQU;
 				INFOPLIST_FILE = AppContatoIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.iesb.AppContatoIOS;
@@ -286,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y555J8GXQU;
 				INFOPLIST_FILE = AppContatoIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.iesb.AppContatoIOS;
