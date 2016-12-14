@@ -163,8 +163,7 @@ static NSString * const kChaveBancoCarregado = @"bancoCarregado";
         /*http://jsonplaceholder.typicode.com/users*/
         
         NSURLSessionDataTask *task =
-        [session dataTaskWithURL:[NSURL URLWithString:@"http://jsonplaceholder.typicode.com/users"]];
-        
+        [session dataTaskWithURL:[NSURL URLWithString:@"https://www.mockaroo.com/f31532e0/download?count=10&key=a406f060"]];
         [task resume];
         
     }
@@ -203,27 +202,17 @@ didCompleteWithError:(nullable NSError *)error{
                 NSPersistentContainer *containerPersistencia = delegate.persistentContainer;
                 NSManagedObjectContext *ctx = containerPersistencia.viewContext;
                 
-                NSURLSessionConfiguration *sc = [NSURLSessionConfiguration defaultSessionConfiguration];
-                NSURLSession *session = [NSURLSession sessionWithConfiguration:sc
-                                                                      delegate:self
-                                                                 delegateQueue:nil];
-                NSURLSessionDownloadTask *fotoTask = nil;
-            
                 for (NSDictionary *user in usuarios) {
                 
                     Contato *contato = [NSEntityDescription insertNewObjectForEntityForName:@"Contato"
                                                                  inManagedObjectContext:ctx];
                 
-                    [contato setNome: [user objectForKey:@"name"]];
+                    [contato setNome: [user objectForKey:@"nome"]];
                     [contato setEmail: [user objectForKey:@"email"]];
-                    [contato setTelefone: [user objectForKey:@"phone"]];
+                    [contato setTelefone: [user objectForKey:@"telefone"]];
                     
-                    fotoTask = [session downloadTaskWithURL:[NSURL URLWithString:@"http://lorempixel.com/200/200/people/"] completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-                            NSData *data = [NSData dataWithContentsOfURL: location];
-                            [contato setFoto: data];
-                    }];
-                    
-                    [fotoTask resume];
+                    NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:[user objectForKey:@"avatar"]]];
+                    [contato setFoto: data];
                 }
             
                 NSError *erroCoreData;
