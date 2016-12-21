@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *NomeContato;
 @property (weak, nonatomic) IBOutlet UILabel *telefone;
 @property (weak, nonatomic) IBOutlet UIImageView *foto;
+@property (weak, nonatomic) IBOutlet UILabel *email;
 
 @end

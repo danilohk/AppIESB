@@ -102,7 +102,8 @@
     Contato *contato = [self.fetchedResultsController objectAtIndexPath:indexPath];
     [cell.NomeContato setText:contato.nome];
     [cell.telefone setText:contato.telefone];
-    
+    [cell.email setText:contato.email];
+
     if(contato.foto != nil){
         [cell.foto setImage:[UIImage imageWithData:contato.foto]];
     }

@@ -27,9 +27,12 @@
 }
 
 static NSString * const kChaveBancoCarregado = @"bancoCarregado";
+static NSString * const kChaveApresentacao = @"apresentacaoExibida";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     
     valorOriginalConstanteBotaoAcessar = _constraintBotaoAcessar.constant;
     
@@ -47,6 +50,17 @@ static NSString * const kChaveBancoCarregado = @"bancoCarregado";
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    
+    BOOL apresentacaoExibida = [[NSUserDefaults standardUserDefaults] boolForKey:kChaveApresentacao];
+    
+    if([self.restorationIdentifier isEqualToString: @"apresentacao"]){
+        if(apresentacaoExibida){
+            [self performSegueWithIdentifier: @"pular" sender: self];
+        }
+        else{
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kChaveApresentacao];
+        }
+    }
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(tecladoApareceu:)
