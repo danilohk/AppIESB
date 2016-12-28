@@ -10,6 +10,9 @@
 #import "FormularioTableViewController.h"
 #import "AppDelegate.h"
 #import "Contato+CoreDataClass.h"
+#import "MapaViewController.h"
+
+
 @import MobileCoreServices;
 @import Photos;
 
@@ -66,6 +69,16 @@
     tapAbrirFoto.numberOfTapsRequired = 1;
     [_abrirFoto addGestureRecognizer:tapAbrirFoto];
     
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue
+                 sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"mapa"]) {
+        
+        MapaViewController *destino = segue.destinationViewController;
+        [destino setContato: self.contato];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {

@@ -29,6 +29,10 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>Posso usar sua câmera?</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Posso usar sua localização a qualquer hora?</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Posso usar sua locaizacao quando o aplicativo estiver aberto?</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Posso acessar sua galeria?</string>
 	<key>UILaunchStoryboardName</key>

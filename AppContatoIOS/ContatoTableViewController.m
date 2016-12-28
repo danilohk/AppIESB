@@ -3,7 +3,7 @@
 #import "ContatoTableViewController.h"
 #import "Contato+CoreDataClass.h"
 #import "AppDelegate.h"
-#import "formularioViewController.h"
+#import "formularioTableViewController.h"
 #import "ContatoTableViewCell.h"
 
 @interface ContatoTableViewController () <NSFetchedResultsControllerDelegate>
@@ -46,7 +46,7 @@
     if ([[segue identifier] isEqualToString:@"edit"]) {
         Contato *contato = [self.fetchedResultsController objectAtIndexPath:[self.tableView indexPathForSelectedRow]];
         
-        formularioViewController *destino = segue.destinationViewController;
+        FormularioTableViewController *destino = segue.destinationViewController;
         [destino setContato: contato];
     }
 }

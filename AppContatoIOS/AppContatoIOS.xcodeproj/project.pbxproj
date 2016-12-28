@@ -16,6 +16,9 @@
 		57AB36801D5BED5E00217529 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AB367E1D5BED5E00217529 /* LaunchScreen.storyboard */; };
 		FA4F7B4F1DDB6E6D006757EC /* ContatoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4F7B4D1DDB6E6D006757EC /* ContatoTableViewCell.m */; };
 		FA4F7B501DDB6E6D006757EC /* ContatoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4F7B4E1DDB6E6D006757EC /* ContatoTableViewCell.xib */; };
+		FA7966011E13C86D00E8039A /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7966001E13C86D00E8039A /* MapaViewController.m */; };
+		FA7966041E13CC6800E8039A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7966031E13CC6800E8039A /* MapKit.framework */; };
+		FA7966061E13CCB400E8039A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7966051E13CC8800E8039A /* CoreLocation.framework */; };
 		FAB850B71DC0C3B7001E2EF5 /* Contato+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB850B41DC0C3B7001E2EF5 /* Contato+CoreDataClass.m */; };
 		FAB850B81DC0C3B7001E2EF5 /* Contato+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB850B61DC0C3B7001E2EF5 /* Contato+CoreDataProperties.m */; };
 		FAB850BB1DC0C800001E2EF5 /* ContatoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB850BA1DC0C800001E2EF5 /* ContatoTableViewController.m */; };
@@ -39,6 +42,10 @@
 		FA4F7B4C1DDB6E6C006757EC /* ContatoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatoTableViewCell.h; sourceTree = "<group>"; };
 		FA4F7B4D1DDB6E6D006757EC /* ContatoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatoTableViewCell.m; sourceTree = "<group>"; };
 		FA4F7B4E1DDB6E6D006757EC /* ContatoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContatoTableViewCell.xib; sourceTree = "<group>"; };
+		FA7965FF1E13C86D00E8039A /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
+		FA7966001E13C86D00E8039A /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
+		FA7966031E13CC6800E8039A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FA7966051E13CC8800E8039A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FAB850B31DC0C3B7001E2EF5 /* Contato+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Contato+CoreDataClass.h"; sourceTree = "<group>"; };
 		FAB850B41DC0C3B7001E2EF5 /* Contato+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Contato+CoreDataClass.m"; sourceTree = "<group>"; };
 		FAB850B51DC0C3B7001E2EF5 /* Contato+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Contato+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -57,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7966061E13CCB400E8039A /* CoreLocation.framework in Frameworks */,
+				FA7966041E13CC6800E8039A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,7 @@
 				FAB850B61DC0C3B7001E2EF5 /* Contato+CoreDataProperties.m */,
 				57AB366C1D5BED5E00217529 /* AppContatoIOS */,
 				57AB366B1D5BED5E00217529 /* Products */,
+				FA7966021E13CC6800E8039A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +103,8 @@
 				57AB36731D5BED5E00217529 /* ViewController.h */,
 				57AB36741D5BED5E00217529 /* ViewController.m */,
 				57AB36761D5BED5E00217529 /* Main.storyboard */,
+				FA7965FF1E13C86D00E8039A /* MapaViewController.h */,
+				FA7966001E13C86D00E8039A /* MapaViewController.m */,
 				FAECAB9F1E01869C009A6E66 /* FormularioTableViewController.h */,
 				FAECABA01E01869C009A6E66 /* FormularioTableViewController.m */,
 				FA4F7B4C1DDB6E6C006757EC /* ContatoTableViewCell.h */,
@@ -116,6 +128,15 @@
 				57AB366E1D5BED5E00217529 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA7966021E13CC6800E8039A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA7966051E13CC8800E8039A /* CoreLocation.framework */,
+				FA7966031E13CC6800E8039A /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +214,7 @@
 			files = (
 				57AB36751D5BED5E00217529 /* ViewController.m in Sources */,
 				FAB850BB1DC0C800001E2EF5 /* ContatoTableViewController.m in Sources */,
+				FA7966011E13C86D00E8039A /* MapaViewController.m in Sources */,
 				FAB850B81DC0C3B7001E2EF5 /* Contato+CoreDataProperties.m in Sources */,
 				57AB36721D5BED5E00217529 /* AppDelegate.m in Sources */,
 				FACD2B791DC1137700A82784 /* formularioViewController.m in Sources */,
